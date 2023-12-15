@@ -10,8 +10,7 @@
 ?>
 
 <div class="main-character">
-    
-<h3 class="scroll-in">
+<h3>
     <div id="title-perso" class="scroll-fade-in" >personnages</div>
 </h3>
     <div class="swiper swiper-container">    

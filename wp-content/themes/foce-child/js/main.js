@@ -15,8 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log("burger menu ok !!!");
 });
   
-
-// Attend que le DOM soit complètement chargé
 document.addEventListener("DOMContentLoaded", function () {
     // Initialise Skrollr
     var s = skrollr.init();

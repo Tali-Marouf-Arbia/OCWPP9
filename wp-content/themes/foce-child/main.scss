@@ -118,7 +118,7 @@ main{
 // fin template part oscar
 
 
-// gestion de l apparition des titres au scroll
+//gestion de l apparition des titres au scroll
 .scroll-fade-in{
   opacity: 0;
   transform: translateY(100px);
@@ -132,10 +132,36 @@ main{
   background-attachment: fixed;
 }
 
-.span-title{
-  opacity: 0;
-  animation: scrollIn 1.5s ease-in-out forwards;
-}
+// .span-title{
+//   opacity: 0;
+//   animation: scrollIn 1.5s ease-in-out forwards;
+// }
+
+
+// @keyframes scrollTitle {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(-100px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// .scroll-fade-in {
+//   opacity: 0;
+//   animation: scrollTitle 1.5s ease-in-out;
+//   transform: translateY(100px);
+// }
+
+// .scroll-fade-in.visible {
+//   opacity: 1;
+//   transform: translateY(0);
+//   transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+//   background-attachment: fixed;
+// }
+
 
 // gestion de la banniere 
 .banner {
@@ -457,14 +483,17 @@ div.swiper-slide{
 
   .oscar-title{
     padding-right: 20px;
-    margin: 10px;
+    margin: 0;
     width: 100%;
     font-size: 34px;
   }
 
   .oscar-container::after {
-    bottom: -1em;
-    margin-bottom: 20px;
+    display: none;
+  }
+
+  .oscar-img{
+    margin: 0;
   }
 }
 
@@ -477,25 +506,8 @@ div.swiper-slide{
 
 }
 
-//media tab
-@media (max-width: 1040px) {
- 
-
-  //section lieu 
-  .story #place > div {
-    margin-top: 0;
-    margin-left: 6em;
-  }
-
-  .story #place h3{
-    font-size: 34px;
-    padding: 50px 0;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 0;
-  }
-
-  //banner 
+//banner tab
+@media (max-width: 1040px) { 
   #background-video{
     display: none;
   }
@@ -530,11 +542,13 @@ div.swiper-slide{
   }
 
   .banner{
-    height: 250px !important;
+    min-height: 400px !important;
+    height: 400px !important;
   }
 
   .logo-banner{
     width: 60% !important;
+    top: 50px;
   }
 
   .fullscreen-menu ul {
@@ -597,11 +611,6 @@ div.swiper-slide{
   width: 200px !important;
 }
 
-img {
-  height: auto;
-  max-width: inherit;
-}
-
 .story #characters {
   flex-direction: column;
   margin-top: 0;
@@ -619,6 +628,7 @@ img {
   }
 }
 
+//le lieu 
 @media (max-width: 1040px) {
   .story #place {
     display: flex;  
@@ -628,14 +638,20 @@ img {
 
   .story #place div{
     margin-bottom: inherit;
+    margin-top: 0;
   }
 
   img {
-    height: auto;
     max-width: inherit;
   }
   #nuages-container{
     margin: 0;
+  }
+  .story #place h3{
+    font-size: 34px;
+    padding: 50px 0;
+    width: 100%;
+    margin-bottom: 0;
   }
 }
 

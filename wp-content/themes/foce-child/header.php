@@ -46,7 +46,7 @@
                     <img id="chat-violet" src="wp-content/themes/foce-child/assets/images/menu/cat(1).png">
                     <img id="chat-orange" src="wp-content/themes/foce-child/assets/images/menu/cat.png">
                     <ul>
-                        <li><a class="scroll-in" href="#histoire">Histoire</a></li>
+                        <li><a class="scroll-in" href="#story">Histoire</a></li>
                         <li><a class="scroll-in" href="#characters">Personnages</a></li>
                         <li><a class="scroll-in" href="#place">Lieu</a></li>
                         <li><a class="scroll-in" href="#studio">Studio Koukaki</a></li>
