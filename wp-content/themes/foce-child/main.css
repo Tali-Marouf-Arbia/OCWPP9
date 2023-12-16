@@ -42,12 +42,6 @@ main {
     transform: rotate(360deg);
   }
 }
-.scroll-in,
-#studio > div::before,
-.story__article::before {
-  animation: scrollIn 1.5s ease-in-out;
-}
-
 .site-footer::before,
 .site-footer::after,
 .site-footer ul::after,
@@ -56,6 +50,12 @@ main {
 #studio h2::before,
 #studio h2::after {
   animation: rotate 18s infinite linear;
+}
+
+.scroll-in,
+#studio > div::before,
+.story__article::before {
+  animation: scrollIn 1.5s ease-in-out;
 }
 
 .oscar-container {

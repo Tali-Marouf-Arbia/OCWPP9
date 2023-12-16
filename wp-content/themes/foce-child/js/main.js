@@ -11,36 +11,33 @@ document.addEventListener("DOMContentLoaded", function() {
     burgerMenu.classList.toggle('change'); 
     fullscreenMenu.style.display = 'none';
   });
-  
-  console.log("burger menu ok !!!");
+  // console.log();
 });
   
 document.addEventListener("DOMContentLoaded", function () {
-    // Initialise Skrollr
     var s = skrollr.init();
-    console.log('init skrollr ok')
+    // console.log()
 });
 
 // Initialise Swiper
 document.addEventListener("DOMContentLoaded", function () {
-    const personnageSwiper = new Swiper('.swiper-container', {
-        slidesPerView: '3', 
-        grabCursor: true,
-        centeredSlides: true,
-        spaceBetween: 60,
-        loop: true,
-        effect: 'coverflow',
-        coverflowEffect: {
-            depth: 100,
-            modifier: 1,
-            rotate: 0,
-            scale: 1,
-            slideShadows: false,
-            stretch: 0,
-        },
-     
-});
-    console.log('SWIPER INIT OK !!!');
+  const personnageSwiper = new Swiper('.swiper-container', {
+    slidesPerView: '3', 
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: 60,
+    loop: true,
+    effect: 'coverflow',
+    coverflowEffect: {
+    depth: 100,
+    modifier: 1,
+    rotate: 0,
+    scale: 1,
+    slideShadows: false,
+    stretch: 0,
+    },
+  });
+  // console.log();
 });
 
 

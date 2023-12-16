@@ -4,7 +4,8 @@ get_header();
 
     <main id="primary" class="site-main">
         <section class="banner">
-            <video id="background-video" autoplay loop poster="wp-content/themes/foce-child/assets/images/banner.png" src=<?php echo get_stylesheet_directory_uri () . '/assets/videos/video.mp4'; ?> type="video/mp4">
+            <video id="background-video" autoplay loop poster="wp-content/themes/foce-child/assets/images/banner.png" src=<?php echo get_stylesheet_directory_uri () . '/assets/videos/video.mp4'; ?>
+            type="video/mp4">
             </video>
             <div class="title-container" data-0="transform: translateY(-50px);"data-500="transform: translateY(200px);">
             <img class="scroll-in logo-banner"src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>">
@@ -37,7 +38,9 @@ get_header();
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
                 <div id="nuages-container" class="nuages-container">
-                <img id="nuages" class="nuages" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/nuages.png'; ?>" alt="Nuages" data-0="transform: translateX(0);" data-600="transform: translateX(-300px);" data-anchor-target="#nuages-container" data-600-top="transform: translateX(0);"> 
+                <img id="nuages" class="nuages" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/nuages.png'; ?>
+                "alt="Nuages" data-0="transform: translateX(0);" data-600="transform: translateX(-300px);" data-anchor-target="#nuages-container" 
+                data-0-top="transform: translateX(0);"> 
                 </div> 
             </article>
         </section>

@@ -18,22 +18,18 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'foce' ); ?></a>
-
     <header id="masthead" class="site-header">
         <h1 class="main-title"><?php bloginfo('name'); ?></h1>
             <nav id="barre-navigation" class="main-navigation"> 
-                
-                <div class="burger-menu">
+                    <div class="burger-menu">
                     <div class="bar bar1"></div>
                     <div class="bar bar2"></div>
                     <div class="bar bar3"></div>
                 </div>
-
                 <div class="fullscreen-menu fade-in"> <!--menu en fullscreen-->
                     <h1 class="site-title"><?php bloginfo('name'); ?></h1> 
                     <img id="img-logo-menu-burger" src="wp-content/themes/foce-child/assets/images/menu/Image logo en paralax.png">
@@ -53,6 +49,5 @@
                     </ul>
                     <p>STUDIO KOUKAKI</p>
                 </div>
-
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
