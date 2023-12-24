@@ -127,36 +127,27 @@ main{
   background-attachment: fixed;
 }
 
-// .span-title{
-//   opacity: 0;
-//   animation: scrollIn 1.5s ease-in-out forwards;
-// }
+.title-none{
+  opacity: 0;
+}
 
+@media screen and (max-width: 892px) {
 
-// @keyframes scrollTitle {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(-100px);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+  .title-none{
+    display: flex;
+  }
+}
 
-// .scroll-fade-in {
-//   opacity: 0;
-//   animation: scrollTitle 1.5s ease-in-out;
-//   transform: translateY(100px);
-// }
+#h2studio{
+  margin-bottom: -95px;
+}
 
-// .scroll-fade-in.visible {
-//   opacity: 1;
-//   transform: translateY(0);
-//   transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
-//   background-attachment: fixed;
-// }
-
+#h2koukaki.scroll-fade-in.visible{
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out 200ms;
+  background-attachment: fixed;
+}
 
 // gestion de la banniere 
 .banner {
@@ -174,6 +165,34 @@ main{
 #background-video{
   position: absolute;
   width: 100%;
+  height: 806px !important;
+  object-fit: cover;
+}
+
+
+/* Masque la barre de contrôle par défaut du lecteur vidéo */
+#background-video::-webkit-media-controls {
+  display: none !important;
+}
+
+/* Désactive l'affichage des contrôles personnalisés sur Firefox */
+#background-video::-moz-media-controls {
+  display: none !important;
+}
+
+/* Désactive les contrôles vidéo personnalisés sur Internet Explorer */
+#background-video::-ms-media-controls {
+  display: none !important;
+}
+
+/* Désactive l'affichage des contrôles personnalisés sur Microsoft Edge */
+#background-video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+/* Désactive l'affichage des contrôles personnalisés sur Edge Chromium */
+#background-video::media-controls {
+  display: none !important;
 }
 
 // logo banner effet de flottement  
